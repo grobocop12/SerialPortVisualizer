@@ -7,7 +7,8 @@ import os
 
 global x_axis, y_axis, interval, time_span, axes, serial_port, line
 interval = 10
-x_axis, y_axis = np.reshape(np.arange(-300, 0, 1), 300), np.zeros(300)
+line_length = 1000
+x_axis, y_axis =np.reshape(np.arange(-line_length, 0, 1), line_length), np.zeros(line_length)
 
 time_span = 0
 
